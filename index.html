@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <h2>Tic Tac Toe</h2>
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+        <div class="btn">
+          <button class="newGame btn">New Game</button>
+        </div>
+      </div>
+
+      <!-- LeaderBoard -->
+      <div class="leaderBoard">
+        <h2>Leader Board</h2>
+        <div class="player-points">
+          <p>User X: <span id="playerXPoints">0</span> points</p>
+          <p>User X: <span id="playerOPoints">0</span> points</p>
+        </div>
+      </div>
+
+      <!-- Winner Popup Modal -->
+      <div id="winnerModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p id="winnerText"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
