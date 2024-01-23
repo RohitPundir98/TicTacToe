@@ -186,11 +186,7 @@ const makeComputerMove = () => {
     // Make the computer move
     selectedBox.innerText = computerSign;
     selectedBox.disabled = true;
-
-    // Check for the winner after the computer move
     checkWinner();
-
-    // Switch player after the computer move
     switchPlayer();
   }
 };
